@@ -3,7 +3,7 @@ function nextPermutation(nums: number[]): void {
     while(i>=0 && nums[i+1]<=nums[i]){
         i--;
     }
-    if(i>0){
+    if(i>=0){
         let j=nums.length-1;
         while(nums[j]<=nums[i]){
             j--;
